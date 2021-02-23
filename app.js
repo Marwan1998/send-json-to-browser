@@ -11,6 +11,13 @@ app.use(express.static("public"));
 
 
 
+app.route("/")
+.get(function(req, res){
+  res.sendFile(__dirname + '/main.html');
+})
+.post(function(req, res){
+  console.log(req.body);
+});
 
 
 
