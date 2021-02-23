@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
+
   <meta charset="utf-8">
   <title>Send JSON</title>
 
@@ -9,27 +9,29 @@
     ul {
       list-style: none;
     }
-    .btn {
-    }
     .center {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
+    .li-btn{
+      text-align: center;
+      margin-top: 15px;
+    }
   </style>
-</head>
+
+  </head>
 
 <body>
-<form action="/" method="post">
-  <div class="center">
-    <ul>
-      <li><textarea name="JSON" rows="8" cols="80"></textarea></li>
-      <li><input class="btn" type="submit" name="btn" value="Send" ></li>
-    </ul>
-  </div>
-</form>
+  <form action="/" method="post">
+    <div class="center">
+      <ul>
+        <li><textarea name="json" rows="8" cols="80"></textarea></li>
+        <li class="li-btn"><input class="btn" type="submit" name="btn" value="Send"></li>
+      </ul>
+    </div>
+  </form>
 
 </body>
-
 </html>
